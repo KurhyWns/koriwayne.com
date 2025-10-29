@@ -1,4 +1,4 @@
-# Git Branching Strategy
+# Git Branching Strategy From Develop To Main
 
 This document outlines the branching strategy and workflow for the koriwayne.com project, ensuring code quality, review processes, and safe deployments.
 
