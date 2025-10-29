@@ -31,6 +31,7 @@ nav:
     - ArgoCD: argocd/index.md
   - Development:
     - Branching Strategy: branching-strategy/index.md
+    - Shared Pipelines: shared-pipelines/index.md
 
 markdown_extensions:
   - pymdownx.highlight:
