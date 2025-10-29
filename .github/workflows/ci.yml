@@ -22,3 +22,9 @@ jobs:
     with:
       scan-paths: '.'
       fail-on-errors: true
+
+  security:
+    uses: KurhyWns/shared-pipeline/.github/workflows/security.yml@main
+    with:
+      scan-paths: '.'
+      fail-on-errors: true

@@ -36,8 +36,10 @@ nav:
           - Secrets Detection:
               - TruffleHog: shared-pipelines/secrets-detection/trufflehog.md
               - GitLeaks: shared-pipelines/secrets-detection/gitleaks.md
-          - Linting:
-              - YAML Lint: shared-pipelines/linting/yaml-lint.md
+      - Linting:
+          - YAML Lint: shared-pipelines/linting/yaml-lint.md
+      - Security:
+          - Trivy: shared-pipelines/security/trivy.md
   - Documentation:
       - Gitea: gitea/index.md
       - MetalLB: metallb/index.md
