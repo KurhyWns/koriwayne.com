@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kori Hanes - CSCI 235 Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .project-card p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .project-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .footer {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .status {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kori Hanes</h1>
+            <p>CSCI 235 Programming Projects Portfolio</p>
+        </div>
+        
+        <div class="status">
+            <strong>✅ Website Status:</strong> Successfully hosted on GitHub Pages with custom domain!
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Rock Paper Scissors</h3>
+                <p>Assignment 10a - A C++ implementation of the classic game with computer opponent and strategic gameplay.</p>
+                <a href="10a/RockPaperScissors.cpp">View Code</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Triangle Validator</h3>
+                <p>Assignment 1a - Validates triangle properties based on side lengths with input validation.</p>
+                <a href="1a/triangle.cpp">View Code</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Factorial Calculator</h3>
+                <p>Assignment 1b - Calculates factorials with comprehensive input validation and error handling.</p>
+                <a href="1b/factorial.cpp">View Code</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Budget Calculator</h3>
+                <p>Assignment 2b - Budget management application with financial calculations and reporting.</p>
+                <a href="2b/Budget.cpp">View Code</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>File Search Utility</h3>
+                <p>Assignment 5b - File search utility with text processing and occurrence counting.</p>
+                <a href="5b/FileSearch.cpp">View Code</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Temperature Converter</h3>
+                <p>Assignment 3a - Temperature conversion between Celsius and Fahrenheit with precision formatting.</p>
+                <a href="3a/Temperature.cpp">View Code</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Repository: <a href="https://github.com/KurhyWns/static_site_test">View on GitHub</a></p>
+            <p>Custom Domain: <a href="https://koriwayne.com">koriwayne.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
