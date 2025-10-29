@@ -25,7 +25,10 @@ nav:
   - Home: index.md
   - Projects:
     - Homelab Project: projects/homelab/index.md
-    - Shared Pipelines: shared-pipelines/index.md
+    - Shared Pipelines:
+      - Overview: shared-pipelines/index.md
+      - Secrets Detection:
+        - TruffleHog: shared-pipelines/secrets-detection/trufflehog.md
   - Documentation:
     - Gitea: gitea/index.md
     - MetalLB: metallb/index.md
