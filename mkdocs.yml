@@ -7,8 +7,13 @@ repo_name: KurhyWns/koriwayne.com
 theme:
   name: material
   palette:
+    # Dark theme
+    scheme: slate
     primary: indigo
     accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.sections
