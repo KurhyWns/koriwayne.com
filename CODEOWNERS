@@ -1,0 +1,19 @@
+# Global code owners
+* @KurhyWns
+
+# Documentation specific owners
+/docs/ @KurhyWns
+
+# MkDocs configuration
+mkdocs.yml @KurhyWns
+
+# GitHub Actions workflows
+/.github/workflows/ @KurhyWns
+
+# Project files
+/projects/ @KurhyWns
+
+# Configuration files
+requirements.txt @KurhyWns
+README.md @KurhyWns
+CODEOWNERS @KurhyWns
