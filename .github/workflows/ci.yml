@@ -1,0 +1,13 @@
+name: CI Pipeline
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  secrets-detection:
+    uses: koriwayne/shared-pipeline/.github/workflows/secrets-detection.yml@v1.0.0
+    with:
+      scan-paths: '.'
+      fail-on-secrets: 'true'
