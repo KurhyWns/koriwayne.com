@@ -29,6 +29,7 @@ nav:
       - Overview: shared-pipelines/index.md
       - Secrets Detection:
         - TruffleHog: shared-pipelines/secrets-detection/trufflehog.md
+        - GitLeaks: shared-pipelines/secrets-detection/gitleaks.md
   - Documentation:
     - Gitea: gitea/index.md
     - MetalLB: metallb/index.md

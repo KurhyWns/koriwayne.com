@@ -9,13 +9,16 @@ The shared-pipeline repository provides comprehensive secrets detection capabili
 ### 🔒 **TruffleHog OSS** ✅ **IMPLEMENTED**
 - **Status**: Active and working
 - **Purpose**: Scans for hardcoded secrets and credentials
-- **Coverage**: Entire repository scanning
+- **Coverage**: Current files scanning
 - **Documentation**: [TruffleHog Details](trufflehog.md)
 
-### 🔍 **GitLeaks** 📋 **PLANNED**
-- **Status**: Planned for future implementation
+### 🔍 **GitLeaks** ✅ **IMPLEMENTED**
+- **Status**: Active and working
 - **Purpose**: Detects secrets in git history
 - **Coverage**: Historical commit analysis
+- **Documentation**: [GitLeaks Details](gitleaks.md)
+
+**Combined Workflow**: Both tools run together in a single `secrets-detection.yml` workflow
 
 ### 🛡️ **detect-secrets** 📋 **PLANNED**
 - **Status**: Planned for future implementation
