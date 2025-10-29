@@ -110,11 +110,13 @@ regex = '''(?i)(credential|credentials)\s*[=:]\s*['"]?([a-z0-9]{8,})['"]?'''
 tags = ["key", "credential"]
 
 [[rules]]
+id = "database-url"
 description = "Database URL"
 regex = '''(?i)(database|db)[_-]?url\s*[=:]\s*['"]?([a-z0-9+.-]+://[^'"]+)['"]?'''
 tags = ["key", "database"]
 
 [[rules]]
+id = "connection-string"
 description = "Connection String"
 regex = '''(?i)(connection|conn)[_-]?string\s*[=:]\s*['"]?([a-z0-9+.-]+://[^'"]+)['"]?'''
 tags = ["key", "connection"]
