@@ -1,21 +1,24 @@
 # Kori Hanes
-## CSCI 235 Programming Projects Portfolio
+## Programming Projects Portfolio
 
-Welcome to my programming projects portfolio! This site showcases various C++ projects completed during my CSCI 235 course.
+Welcome to my programming projects portfolio! This site showcases various projects.
 
 ## Website Status
 ✅ **Successfully hosted on GitHub Pages with custom domain!**
 
 ## About This Portfolio
 
-This portfolio contains a collection of programming assignments demonstrating various concepts in C++ including:
-- Input validation and error handling
-- File I/O operations
-- Mathematical calculations
-- Game logic implementation
-- Data processing and analysis
+This portfolio demonstrates my expertise in **DevSecOps** and **GitOps** methodologies, showcasing projects that integrate security throughout the entire software development lifecycle:
 
-Each project includes source code and detailed descriptions of the implementation approach and key features.
+- **Infrastructure as Code (IaC)** implementations
+- **Continuous Integration/Continuous Deployment (CI/CD)** pipelines
+- **Security-first development** practices
+- **Automated testing and validation**
+- **GitOps workflows** for reliable deployments
+- **Container orchestration** and microservices architecture
+- **Compliance and governance** automation
+
+Each project demonstrates practical applications of DevSecOps principles, showing how security is integrated throughout the entire software development lifecycle rather than being an afterthought.
 
 ## Repository Information
 - **GitHub Repository**: [View on GitHub](https://github.com/KurhyWns/static_site_test)

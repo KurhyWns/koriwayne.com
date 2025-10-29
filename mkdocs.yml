@@ -1,4 +1,4 @@
-site_name: Kori Hanes - CSCI 235 Projects
+site_name: Kori Hanes - Projects
 site_description: Programming Projects Portfolio
 site_url: https://koriwayne.com
 repo_url: https://github.com/KurhyWns/static_site_test
@@ -24,7 +24,11 @@ theme:
 nav:
   - Home: index.md
   - Projects:
-    - Example Project: projects/example-project.md
+    - Homelab Project: projects/homelab/index.md
+  - Documentation:
+    - Gitea: gitea/index.md
+    - MetalLB: metallb/index.md
+    - ArgoCD: argocd/index.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -39,5 +43,3 @@ markdown_extensions:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      enable_creation_date: true
