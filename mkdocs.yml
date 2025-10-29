@@ -1,8 +1,8 @@
-site_name: Kori Hanes - Projects
-site_description: Programming Projects Portfolio
+site_name: Kori Hanes - DevSecOps Portfolio
+site_description: DevSecOps & GitOps Portfolio
 site_url: https://koriwayne.com
-repo_url: https://github.com/KurhyWns/static_site_test
-repo_name: KurhyWns/static_site_test
+repo_url: https://github.com/KurhyWns/koriwayne.com
+repo_name: KurhyWns/koriwayne.com
 
 theme:
   name: material
