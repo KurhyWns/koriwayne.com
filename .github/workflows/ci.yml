@@ -5,6 +5,10 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   secrets-detection:
     uses: KurhyWns/shared-pipeline/.github/workflows/secrets-detection.yml@main
