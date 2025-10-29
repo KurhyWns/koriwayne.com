@@ -33,14 +33,17 @@ jobs:
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+        with:
+          config-path: .gitleaks.toml
+
+      - name: Install detect-secrets
+        run: |
+          pip install detect-secrets
 
       - name: Run detect-secrets
-        uses: Yelp/detect-secrets@master
-        with:
-          baseline: .secrets.baseline
-          fail-on-unaudited: true
-          fail-on-live: true
+        run: |
+          detect-secrets scan --baseline .secrets.baseline
+          detect-secrets audit .secrets.baseline
 
   linting:
     name: Code Quality & Linting

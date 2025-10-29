@@ -1,0 +1,120 @@
+title = "gitleaks config"
+
+[allowlist]
+description = "Allowlist for gitleaks"
+regexes = [
+  '''(?i)(?P<key>password|passwd|pwd)\s*=\s*['"]?[^'"]{1,8}['"]?''',
+  '''(?i)(?P<key>api_key|apikey)\s*=\s*['"]?[^'"]{1,8}['"]?''',
+  '''(?i)(?P<key>secret|token)\s*=\s*['"]?[^'"]{1,8}['"]?''',
+]
+
+[allowlist.stops]
+description = "Stop words for allowlist"
+regexes = [
+  '''example''',
+  '''test''',
+  '''sample''',
+  '''placeholder''',
+  '''your_.*_here''',
+  '''<.*>''',
+]
+
+[[rules]]
+description = "Generic API Key"
+regex = '''(?i)(api[_-]?key|apikey|api_key)\s*[=:]\s*['"]?([a-z0-9]{8,})['"]?'''
+tags = ["key", "api"]
+
+[[rules]]
+description = "Generic Secret"
+regex = '''(?i)(secret|secrets)\s*[=:]\s*['"]?([a-z0-9]{8,})['"]?'''
+tags = ["key", "secret"]
+
+[[rules]]
+description = "Generic Token"
+regex = '''(?i)(token|tokens)\s*[=:]\s*['"]?([a-z0-9]{8,})['"]?'''
+tags = ["key", "token"]
+
+[[rules]]
+description = "Generic Password"
+regex = '''(?i)(password|passwd|pwd)\s*[=:]\s*['"]?([a-z0-9]{8,})['"]?'''
+tags = ["key", "password"]
+
+[[rules]]
+description = "AWS Access Key"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["key", "AWS"]
+
+[[rules]]
+description = "AWS Secret Key"
+regex = '''(?i)aws[_-]?secret[_-]?access[_-]?key\s*[=:]\s*['"]?([a-z0-9/+=]{40})['"]?'''
+tags = ["key", "AWS"]
+
+[[rules]]
+description = "GitHub Token"
+regex = '''ghp_[a-zA-Z0-9]{36}'''
+tags = ["key", "GitHub"]
+
+[[rules]]
+description = "GitHub App Token"
+regex = '''gho_[a-zA-Z0-9]{36}'''
+tags = ["key", "GitHub"]
+
+[[rules]]
+description = "GitHub Personal Access Token"
+regex = '''ghu_[a-zA-Z0-9]{36}'''
+tags = ["key", "GitHub"]
+
+[[rules]]
+description = "GitHub Refresh Token"
+regex = '''ghr_[a-zA-Z0-9]{76}'''
+tags = ["key", "GitHub"]
+
+[[rules]]
+description = "Private Key"
+regex = '''-----BEGIN[ A-Z]*PRIVATE KEY[ A-Z]*-----'''
+tags = ["key", "private"]
+
+[[rules]]
+description = "SSH Private Key"
+regex = '''-----BEGIN OPENSSH PRIVATE KEY-----'''
+tags = ["key", "SSH", "private"]
+
+[[rules]]
+description = "RSA Private Key"
+regex = '''-----BEGIN RSA PRIVATE KEY-----'''
+tags = ["key", "RSA", "private"]
+
+[[rules]]
+description = "DSA Private Key"
+regex = '''-----BEGIN DSA PRIVATE KEY-----'''
+tags = ["key", "DSA", "private"]
+
+[[rules]]
+description = "EC Private Key"
+regex = '''-----BEGIN EC PRIVATE KEY-----'''
+tags = ["key", "EC", "private"]
+
+[[rules]]
+description = "PGP Private Key"
+regex = '''-----BEGIN PGP PRIVATE KEY BLOCK-----'''
+tags = ["key", "PGP", "private"]
+
+[[rules]]
+description = "JWT Token"
+regex = '''eyJ[a-zA-Z0-9_-]*\.[a-zA-Z0-9_-]*\.[a-zA-Z0-9_-]*'''
+tags = ["key", "JWT"]
+
+[[rules]]
+description = "Generic Credential"
+regex = '''(?i)(credential|credentials)\s*[=:]\s*['"]?([a-z0-9]{8,})['"]?'''
+tags = ["key", "credential"]
+
+[[rules]]
+description = "Database URL"
+regex = '''(?i)(database|db)[_-]?url\s*[=:]\s*['"]?([a-z0-9+.-]+://[^'"]+)['"]?'''
+tags = ["key", "database"]
+
+[[rules]]
+description = "Connection String"
+regex = '''(?i)(connection|conn)[_-]?string\s*[=:]\s*['"]?([a-z0-9+.-]+://[^'"]+)['"]?'''
+tags = ["key", "connection"]
