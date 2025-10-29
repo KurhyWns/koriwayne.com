@@ -40,10 +40,17 @@ This portfolio demonstrates my expertise in **DevSecOps** and **GitOps** methodo
 
 This portfolio implements comprehensive security and quality checks across all projects:
 
-### 🔒 **Secrets Detection**
-- **TruffleHog OSS**: Scans for hardcoded secrets and credentials
-- **GitLeaks**: Detects secrets in git history
-- **detect-secrets**: Baseline-based secret detection
+### 🔒 **Secrets Detection** ✅ **IMPLEMENTED**
+- **TruffleHog OSS**: ✅ **ACTIVE** - Scans entire repository for hardcoded secrets and credentials
+- **GitLeaks**: Planned for future implementation
+- **detect-secrets**: Planned for future implementation
+
+**Current Implementation**:
+- Runs on every push to `main` branch
+- Runs on all pull requests to `main`
+- Uses shared-pipeline workflow for consistency
+- Scans entire repository (not just changed files)
+- Only reports verified secrets (reduces false positives)
 
 ### 🐍 **Code Quality**
 - **Black**: Python code formatting
