@@ -15,10 +15,10 @@ jobs:
     uses: KurhyWns/shared-pipeline/.github/workflows/secrets-detection.yml@main
     with:
       scan-paths: '.'
-      fail-on-secrets: true
+      fail-on-secrets: 'true'
 
   lint:
     uses: KurhyWns/shared-pipeline/.github/workflows/lint.yml@main
     with:
       scan-paths: '.'
-      fail-on-errors: true
+      fail-on-errors: 'true'

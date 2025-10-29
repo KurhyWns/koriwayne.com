@@ -1,10 +1,11 @@
+---
 name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: read
@@ -22,20 +23,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      
+
       - name: Install dependencies
         run: |
           pip install mkdocs
           pip install mkdocs-material
-      
+
       - name: Build
         run: mkdocs build
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
