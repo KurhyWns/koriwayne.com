@@ -15,3 +15,9 @@ jobs:
     with:
       scan-paths: '.'
       fail-on-secrets: true
+
+  lint:
+    uses: KurhyWns/shared-pipeline/.github/workflows/lint.yml@main
+    with:
+      scan-paths: '.'
+      fail-on-errors: true
