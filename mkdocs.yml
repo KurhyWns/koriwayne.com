@@ -29,6 +29,8 @@ nav:
     - Gitea: gitea/index.md
     - MetalLB: metallb/index.md
     - ArgoCD: argocd/index.md
+  - Development:
+    - Branching Strategy: branching-strategy/index.md
 
 markdown_extensions:
   - pymdownx.highlight:
