@@ -10,4 +10,4 @@ jobs:
     uses: KurhyWns/shared-pipeline/.github/workflows/secrets-detection.yml@main
     with:
       scan-paths: '.'
-      fail-on-secrets: 'true'
+      fail-on-secrets: true
