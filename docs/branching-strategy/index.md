@@ -19,7 +19,7 @@ main (production)
 
 ### Visual Diagram
 
-![Branching Strategy Diagram](../projects/Shared%20Pipelines/koriwayne%20branchingstrategy.drawio.png){ width="900" }
+![Branching Strategy](images/branching.png){ width="900" }
 
 
 ## Branch Types
