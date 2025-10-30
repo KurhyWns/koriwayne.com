@@ -1,6 +1,6 @@
 # Kori Hanes - CSCI 235 Projects
 
-A MkDocs-based portfolio showcasing CSCI 235 programming projects.
+A MkDocs-based portfolio showcasing projects.
 
 ## Setup
 
