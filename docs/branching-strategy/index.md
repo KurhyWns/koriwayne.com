@@ -17,6 +17,11 @@ main (production)
 └── release/v1.0.0
 ```
 
+### Visual Diagram
+
+![Branching Strategy Diagram](../projects/Shared%20Pipelines/koriwayne%20branchingstrategy.drawio.png){ width="900" }
+
+
 ## Branch Types
 
 ### 1. **Main Branch** (`main`)
@@ -267,3 +272,24 @@ git revert <commit-hash>
 - Review this branching strategy guide
 - Contact repository administrators
 - Check project's contributing guidelines
+
+## Changing the Default Branch in GitHub (to develop)
+
+Follow these steps to set `develop` as the default branch for this repository:
+
+1. Create and push `develop` if it doesn't exist:
+   ```bash
+   git checkout -b develop
+   git push -u origin develop
+   ```
+2. In GitHub, go to: Settings → Branches → Default branch → Change default branch.
+3. Select `develop` and confirm.
+4. Verify CI triggers include `main` and `develop` in `.github/workflows/ci.yml`:
+   ```yaml
+   "on":
+     push:
+       branches: [main, develop]
+     pull_request:
+       branches: [main, develop]
+   ```
+5. Protect `main` and `develop` per the rules above (Settings → Branches → Add rule).
