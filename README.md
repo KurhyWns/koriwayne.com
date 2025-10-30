@@ -30,4 +30,4 @@ mkdocs build
 This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
 - **Live Site**: https://koriwayne.com
-- **Repository**: https://github.com/KurhyWns/static_site_test
+- **Repository**: https://github.com/KurhyWns/koriwayne.com
