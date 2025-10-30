@@ -19,7 +19,7 @@ main (production)
 
 ### Visual Diagram
 
-![Branching Strategy](images/branching.png){ width="900" }
+![Branching Strategy](images/branching.png){ width="900" .img-contrast }
 
 
 ## Branch Types
