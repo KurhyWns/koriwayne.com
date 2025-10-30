@@ -5,6 +5,9 @@ site_url: https://koriwayne.com
 repo_url: https://github.com/KurhyWns/koriwayne.com
 repo_name: KurhyWns/koriwayne.com
 
+extra_css:
+  - assets/css/extra.css
+
 theme:
   name: material
   palette:
