@@ -17,6 +17,11 @@ main (production)
 └── release/v1.0.0
 ```
 
+### Visual Diagram
+
+![Branching Strategy Diagram](../projects/Shared%20Pipelines/koriwayne%20branchingstrategy.drawio.png){ width="900" }
+
+
 ## Branch Types
 
 ### 1. **Main Branch** (`main`)
