@@ -20,21 +20,15 @@ This portfolio demonstrates my expertise in **DevSecOps** and **GitOps** methodo
 
 ## Project Portfolio
 
-### 🏠 **Home Lab Infrastructure**
-- **Repository**: [homeLab](https://github.com/KurhyWns/homeLab)
-- **Focus**: Self-hosted infrastructure with Docker, Kubernetes, and automation
-- **Technologies**: Docker, Kubernetes, Terraform, Ansible, Prometheus, Grafana
-
 ### 🔄 **Shared Pipeline Strategy**
 - **Repository**: [shared-pipeline](https://github.com/KurhyWns/shared-pipeline)
 - **Focus**: Reusable CI/CD workflows and security scanning
 - **Technologies**: GitHub Actions, TruffleHog, GitLeaks, Hadolint, kubeval
 
 ### 📚 **Documentation & Learning**
-- **Gitea**: Self-hosted Git server documentation
-- **MetalLB**: Load balancer for bare metal Kubernetes
-- **ArgoCD**: GitOps continuous delivery tool
 - **Branching Strategy**: GitFlow with security enforcement
+
+> **Note**: For Home Lab Infrastructure documentation (Gitea, MetalLB, ArgoCD), visit [homelab.koriwayne.com](https://homelab.koriwayne.com)
 
 ## Security & Quality Pipeline
 
@@ -75,8 +69,8 @@ This portfolio implements comprehensive security and quality checks across all p
 
 ## Repository Information
 - **Portfolio Repository**: [koriwayne.com](https://github.com/KurhyWns/koriwayne.com)
-- **Custom Domain**: [koriwayne.com](https://koriwayne.com)
-- **Home Lab**: [homeLab](https://github.com/KurhyWns/homeLab)
+- **Custom Domain**: [koriwayne.com](https://www.koriwayne.com)
+- **Home Lab**: [homeLab](https://www.homelab.koriwayne.com/)
 - **Shared Pipelines**: [shared-pipeline](https://github.com/KurhyWns/shared-pipeline)
 
 ---
