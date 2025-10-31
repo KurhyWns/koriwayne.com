@@ -239,6 +239,30 @@ jobs:
           terraform plan -out=tfplan
 ```
 
+## Self-Hosted Runners
+
+The shared pipelines can execute on self-hosted runners for cost savings and performance. A self-hosted GitHub Actions runner is available on the homelab Kubernetes cluster.
+
+### **Using Self-Hosted Runners**
+
+To use the self-hosted runner, update your workflow's `runs-on`:
+
+```yaml
+jobs:
+  my-job:
+    runs-on: self-hosted  # Uses homelab Kubernetes runner
+    steps:
+      # ... your steps
+```
+
+The self-hosted runner:
+- **Location**: Kubernetes cluster on homelab infrastructure
+- **Labels**: `self-hosted,linux,k8s`
+- **Benefits**: No per-minute charges, dedicated resources, faster execution
+- **Documentation**: See [homelab.koriwayne.com CI/CD Runners](https://homelab.koriwayne.com/cicd-runners/)
+
+> **Note**: For self-hosted runner setup and management, see the [homelab documentation](https://homelab.koriwayne.com/cicd-runners/github-runner.md).
+
 ## Usage in Projects
 
 ### **Referencing Shared Workflows**

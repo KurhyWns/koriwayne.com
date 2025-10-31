@@ -24,6 +24,7 @@ This portfolio demonstrates my expertise in **DevSecOps** and **GitOps** methodo
 - **Repository**: [shared-pipeline](https://github.com/KurhyWns/shared-pipeline)
 - **Focus**: Reusable CI/CD workflows and security scanning
 - **Technologies**: GitHub Actions, TruffleHog, GitLeaks, Hadolint, kubeval
+- **Self-Hosted Runners**: Available for cost-effective execution on homelab infrastructure
 
 ### 📚 **Documentation & Learning**
 - **Branching Strategy**: GitFlow with security enforcement
