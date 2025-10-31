@@ -30,6 +30,15 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/KurhyWns
+
+copyright: |
+  <a href="https://koriwayne.com">koriwayne.com</a> | 
+  <a href="https://homelab.koriwayne.com">homelab.koriwayne.com</a>
+
 nav:
   - Home: index.md
   - Projects:

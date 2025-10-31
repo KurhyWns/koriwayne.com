@@ -241,11 +241,15 @@ jobs:
 
 ## Self-Hosted Runners
 
-The shared pipelines can execute on self-hosted runners for cost savings and performance. A self-hosted GitHub Actions runner is available on the homelab Kubernetes cluster.
+The shared pipelines can execute on self-hosted runners for cost savings and performance. Self-hosted runners are available on the homelab Kubernetes cluster for both GitHub Actions and GitLab CI.
 
-### **Using Self-Hosted Runners**
+### **GitHub Actions Self-Hosted Runner**
 
-To use the self-hosted runner, update your workflow's `runs-on`:
+A self-hosted GitHub Actions runner is available for executing shared pipeline workflows.
+
+**Using the Runner:**
+
+Update your workflow's `runs-on`:
 
 ```yaml
 jobs:
@@ -255,13 +259,19 @@ jobs:
       # ... your steps
 ```
 
-The self-hosted runner:
+**Runner Details:**
 - **Location**: Kubernetes cluster on homelab infrastructure
 - **Labels**: `self-hosted,linux,k8s`
 - **Benefits**: No per-minute charges, dedicated resources, faster execution
-- **Documentation**: See [homelab.koriwayne.com CI/CD Runners](https://homelab.koriwayne.com/cicd-runners/)
+- **Documentation**: See [homelab.koriwayne.com - GitHub Runner](https://homelab.koriwayne.com/cicd-runners/github-runner.md)
 
-> **Note**: For self-hosted runner setup and management, see the [homelab documentation](https://homelab.koriwayne.com/cicd-runners/github-runner.md).
+### **GitLab CI Self-Hosted Runner**
+
+A self-hosted GitLab CI runner is also available for executing pipelines on the homelab GitLab instance. While the shared pipelines repository focuses on GitHub Actions, the homelab uses GitLab CI for internal infrastructure pipelines.
+
+**Documentation**: See [homelab.koriwayne.com - GitLab Runner](https://homelab.koriwayne.com/cicd-runners/gitlab-runner.md)
+
+> **Note**: For complete self-hosted runner setup, configuration, and management details, see the [homelab CI/CD Runners documentation](https://homelab.koriwayne.com/cicd-runners/).
 
 ## Usage in Projects
 
