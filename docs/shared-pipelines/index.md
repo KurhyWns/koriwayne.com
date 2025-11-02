@@ -399,9 +399,30 @@ uses: koriwayne/shared-pipelines/.github/workflows/security-scan.yml@main
 2. Create more specialized workflows
 3. Optimize for performance and reliability
 
+## Self-Hosted Runners
+
+All workflows in the shared pipeline utilize **custom self-hosted runners** deployed on Kubernetes for optimal resource utilization and performance.
+
+### Runner Configuration
+
+- **Deployment**: Kubernetes pods running GitHub Actions runner binaries
+- **Parallel Execution**: Multiple runner replicas (currently 3) allow parallel job execution
+- **Resource Optimization**: Pre-installed dependencies (python3, pip, yamllint) eliminate per-job installation overhead
+- **Time Optimization**: Common dependencies cached at pod startup, reducing workflow execution time from ~30 seconds to ~1-2 seconds for lint jobs
+
+### Benefits
+
+- **Reduced Latency**: Jobs execute immediately without waiting for GitHub-hosted runner availability
+- **Cost Efficiency**: No per-minute billing on GitHub-hosted runners for private repositories
+- **Customization**: Pre-configured with required tools, eliminating repeated installations
+- **Performance**: Parallel job execution with multiple runner instances
+
+For detailed setup instructions, see the [Home Lab Runner Documentation](https://homelab.koriwayne.com).
+
 ## Tools and Resources
 
 - **GitHub Actions**: Workflow automation
+- **Self-Hosted Runners**: Custom Kubernetes-based runners for optimized performance
 - **Semantic Versioning**: Version management
 - **GitHub Releases**: Release management
 - **GitHub Packages**: Artifact storage
