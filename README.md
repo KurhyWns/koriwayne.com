@@ -27,7 +27,7 @@ mkdocs build
 
 ## Deployment
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch. Test
 
 - **Live Site**: https://koriwayne.com
 - **Repository**: https://github.com/koriwayne/koriwayne.com
