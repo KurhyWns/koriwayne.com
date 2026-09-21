@@ -2,8 +2,8 @@
 site_name: Kori Hanes - DevSecOps & GitOps Pipelines
 site_description: DevSecOps & GitOps Pipelines
 site_url: https://koriwayne.com
-repo_url: https://github.com/KurhyWns/koriwayne.com
-repo_name: KurhyWns/koriwayne.com
+repo_url: https://github.com/koriwayne/koriwayne.com
+repo_name: koriwayne/koriwayne.com
 
 extra_css:
   - assets/css/extra.css
