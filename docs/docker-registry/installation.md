@@ -101,7 +101,7 @@ kubectl apply -f cicd/argocd/applications/docker-registry-app.yaml
 
 #### Step 3: Sync via ArgoCD UI
 
-1. Open ArgoCD: `http://192.168.1.245`
+1. Open ArgoCD: `http://192.168.1.***`
 2. Login with credentials
 3. Find the `docker-registry` application
 4. Click "Sync" to deploy
@@ -131,7 +131,7 @@ Add your registry IP:
 
 ```json
 {
-  "insecure-registries": ["192.168.1.248:5000"]
+  "insecure-registries": ["192.168.1.***:5000"]
 }
 ```
 
@@ -155,7 +155,7 @@ docker info | grep -A 5 "Insecure Registries"
 
 ```json
 {
-  "insecure-registries": ["192.168.1.248:5000"]
+  "insecure-registries": ["192.168.1.***:5000"]
 }
 ```
 
