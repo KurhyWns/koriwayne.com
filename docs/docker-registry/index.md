@@ -50,7 +50,7 @@ The Docker registry deployment consists of:
 ### Deploy the Registry
 
 ```bash
-cd /Volumes/KoriWayne\ Encrypted/Projects/homelab.local/applications/docker-registry
+cd /docker-registry
 kubectl apply -k .
 ```
 
@@ -76,7 +76,7 @@ Configure Docker on your local machine to use the insecure registry:
 ```json
 // /etc/docker/daemon.json
 {
-  "insecure-registries": ["192.168.1.248:5000"]
+  "insecure-registries": ["192.168.1.***:5000"]
 }
 ```
 
@@ -259,7 +259,7 @@ Build and push custom CI images to optimize GitLab CI job execution:
 
 ```bash
 # Build custom CI image
-cd /Volumes/KoriWayne\ Encrypted/Projects/homelab.local/cicd/custom-ci-image
+cd /custom-ci-image
 docker build -t $REGISTRY_IP:5000/custom-ci:latest .
 
 # Push to registry
