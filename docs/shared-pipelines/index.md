@@ -259,9 +259,7 @@ The self-hosted runner:
 - **Location**: Kubernetes cluster on homelab infrastructure
 - **Labels**: `self-hosted,linux,k8s`
 - **Benefits**: No per-minute charges, dedicated resources, faster execution
-- **Documentation**: See [homelab.koriwayne.com CI/CD Runners](https://homelab.koriwayne.com/cicd-runners/)
 
-> **Note**: For self-hosted runner setup and management, see the [homelab documentation](https://homelab.koriwayne.com/cicd-runners/github-runner.md).
 
 ## Usage in Projects
 
